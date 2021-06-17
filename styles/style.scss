@@ -1,0 +1,145 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Noto Sans TC", sans-serif;
+}
+
+body {
+  position: relative;
+}
+
+.orange {
+  position: absolute;
+  top: -15vh;
+  right: -5vw;
+  z-index: -1;
+  width: 55vw;
+  height: 150vh;
+}
+
+header {
+  nav {
+    width: 100%;
+    ul {
+      padding: 2rem;
+      width: 20%;
+      display: flex;
+      list-style-type: none;
+      justify-content: space-around;
+      li {
+        a {
+          text-decoration: none;
+          font-size: 1.5rem;
+          color: black;
+        }
+      }
+    }
+  }
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+
+  section.left {
+    flex: 3 1 500px;
+    padding: 1rem;
+
+    h1 {
+      font-size: 3rem;
+      color: #e08958;
+    }
+
+    p {
+      padding: 2rem 0rem;
+      font-size: 1.5rem;
+    }
+  }
+
+  section.right {
+    flex: 1 1 600px;
+    position: relative;
+    img {
+      border-radius: 50%;
+      width: 30vw;
+      height: 30vw;
+      position: absolute;
+      top: 10vh;
+      right: 10vw;
+    }
+  }
+
+  section.table {
+    margin: 1rem;
+    flex: 2 1 900px;
+
+    table {
+      border-collapse: collapse;
+      tr {
+        border-bottom: 2px solid gray;
+        td {
+          padding: 1rem;
+        }
+        &:hover {
+          background-color: #e08958;
+        }
+      }
+    }
+  }
+
+  section.picture {
+    flex: 1 1 200px;
+
+    img {
+      width: 20vw;
+    }
+  }
+}
+
+footer {
+  a {
+    padding: 1rem;
+  }
+}
+
+.active {
+  color: #e08958;
+}
+
+@media screen and (max-width: 1100px) {
+  .orange {
+    opacity: 0.25;
+  }
+  header {
+    nav {
+      ul {
+        width: 100%;
+        flex-direction: column;
+        li {
+          padding: 1rem 0rem;
+          border-bottom: 2px solid gray;
+        }
+      }
+    }
+  }
+
+  main {
+    section.right {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      img {
+        position: static;
+        width: 50vw;
+        height: 50vh;
+      }
+    }
+  }
+
+  footer {
+    margin: 1rem;
+    display: flex;
+    justify-content: center;
+  }
+}

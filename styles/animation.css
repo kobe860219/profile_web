@@ -1,0 +1,102 @@
+div.animation {
+  width: 100%;
+  height: 100vh;
+  background-color: #e08958;
+  position: fixed;
+  top: 0;
+  z-index: 10;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#first {
+  stroke-dasharray: 1272px;
+  stroke-dashoffset: 1272px;
+  -webkit-animation: fadeInside 0.5s ease-in forwards;
+          animation: fadeInside 0.5s ease-in forwards;
+}
+
+#second {
+  stroke-dasharray: 830px;
+  stroke-dashoffset: 830px;
+  -webkit-animation: fadeInside 0.5s ease-in forwards 0.3s;
+          animation: fadeInside 0.5s ease-in forwards 0.3s;
+}
+
+#third {
+  stroke-dasharray: 1601px;
+  stroke-dashoffset: 1601px;
+  -webkit-animation: fadeInside 0.5s ease-in forwards 0.6s;
+          animation: fadeInside 0.5s ease-in forwards 0.6s;
+}
+
+#fourth {
+  stroke-dasharray: 1480px;
+  stroke-dashoffset: 1480px;
+  -webkit-animation: fadeInside 0.5s ease-in forwards 0.9s;
+          animation: fadeInside 0.5s ease-in forwards 0.9s;
+}
+
+#fifth {
+  stroke-dasharray: 529px;
+  stroke-dashoffset: 529px;
+  -webkit-animation: fadeInside 0.5s ease-in forwards 1.2s;
+          animation: fadeInside 0.5s ease-in forwards 1.2s;
+}
+
+#sixth {
+  stroke-dasharray: 781px;
+  stroke-dashoffset: 781px;
+  -webkit-animation: fadeInside 0.5s ease-in forwards 1.5s;
+          animation: fadeInside 0.5s ease-in forwards 1.5s;
+}
+
+#seventh {
+  stroke-dasharray: 1455px;
+  stroke-dashoffset: 1455px;
+  -webkit-animation: fadeInside 0.5s ease-in forwards 1.8s;
+          animation: fadeInside 0.5s ease-in forwards 1.8s;
+}
+
+svg {
+  -webkit-animation: fill 0.5s ease-in forwards 1.8s;
+          animation: fill 0.5s ease-in forwards 1.8s;
+}
+
+@-webkit-keyframes fadeInside {
+  to {
+    stroke-dashoffset: 0px;
+  }
+}
+
+@keyframes fadeInside {
+  to {
+    stroke-dashoffset: 0px;
+  }
+}
+
+@-webkit-keyframes fill {
+  from {
+    fill: transparent;
+  }
+  to {
+    fill: white;
+  }
+}
+
+@keyframes fill {
+  from {
+    fill: transparent;
+  }
+  to {
+    fill: white;
+  }
+}
+/*# sourceMappingURL=animation.css.map */
